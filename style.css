@@ -345,6 +345,11 @@ a {
     margin-top: 50px;
 }
 
+.profile:hover .bar-level{
+    animation-name: bar;
+    animation-duration: 2s;
+}
+
 .profile .profile-card{
     background-color: white;
     padding: 50px;
@@ -379,24 +384,39 @@ a {
 }
 
 
-.skill .bar-level:hover::after{
-    content: "tes";
-    top: -25px;
-    position: absolute;
-    
+@keyframes bar {
+    0% {
+       width: 0;
+    }
+    50%{
+        width:inherit;
+    }
+    100% {
+        width: cacl(inherit - 10px);
+        
+    }
 }
+
 
 .bar-level{
     height: 10px;
     position: absolute;
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
-    transition: width 2s;
+    
 }
+
 .figma-level{
 
     width: 90%;
     background-color: #0acf83;
+}
+
+.figma-level:hover::after{
+
+    content: "Figma";
+    top: -25px;
+    position: absolute;
 }
 
 .html-level{
@@ -405,10 +425,24 @@ a {
     background-color: #ff5b14;
 }
 
+.html-level:hover::after{
+
+    content: "HTML";
+    top: -25px;
+    position: absolute;
+}
+
 .css-level{
 
     width: 80%;
     background-color: #2196f3;
+}
+
+.css-level:hover::after{
+
+    content: "CSS";
+    top: -25px;
+    position: absolute;
 }
 
 .js-level{
@@ -417,16 +451,37 @@ a {
     background-color: #ffd600;
 }
 
+.js-level:hover::after{
+
+    content: "Javascript";
+    top: -25px;
+    position: absolute;
+}
+
 .react-level{
 
     width: 60%;
     background-color: #002fff;
 }
 
+.react-level:hover::after{
+
+    content: "React JS";
+    top: -25px;
+    position: absolute;
+}
+
 .laravel-level{
 
     width: 70%;
     background-color: #ff3434;
+}
+
+.laravel-level:hover::after{
+
+    content: "Laravel";
+    top: -25px;
+    position: absolute;
 }
 
 .profile-card .title{
@@ -475,7 +530,9 @@ a {
     border-radius: 20px;
     padding: 40px;
     color: white;
-    background-color: var(--primary);
+    background: #8e2de2; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #8e2de2, #4a00e0); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #8e2de2, #4a00e0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     box-shadow:
     0 0.2px 2.5px rgba(0, 0, 0, 0.009),
     0 0.6px 6.8px rgba(0, 0, 0, 0.015),
