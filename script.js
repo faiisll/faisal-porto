@@ -21,16 +21,12 @@ function scrollSpy(position){
   }
 }
 
-let slider = new Splide(".splide", {
-  gap: 2,
-});
 
 const portos = document.getElementById("portos");
 let html = "";
 porto.map( p => {
   html += `
-  <li class="splide__slide">
-  <div class="splide__slide__container">
+
     <div class="porto-slider">
       <img
         src="assets/porto/${p.img}"
@@ -50,14 +46,12 @@ porto.map( p => {
         </div>
       </div>
     </div>
-  </div>
-</li>
+
   `;
 });
 
 portos.innerHTML = html;
 
-slider.mount();
 AOS.init();
 
 
