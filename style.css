@@ -343,6 +343,14 @@ a {
     grid-template-columns: 1fr;
     gap: 50px;
     margin-top: 50px;
+    background-color: white;
+    box-shadow:
+    0 0.2px 2.5px rgba(0, 0, 0, 0.009),
+    0 0.6px 6.8px rgba(0, 0, 0, 0.015),
+    0 1.5px 14.2px rgba(0, 0, 0, 0.02),
+    0 5px 35px rgba(0, 0, 0, 0.03)
+    ;
+    border-radius: 10px;
 }
 
 .profile:hover .bar-level{
@@ -351,15 +359,8 @@ a {
 }
 
 .profile .profile-card{
-    background-color: white;
     padding: 50px;
-    box-shadow:
-    0 0.2px 2.5px rgba(0, 0, 0, 0.009),
-    0 0.6px 6.8px rgba(0, 0, 0, 0.015),
-    0 1.5px 14.2px rgba(0, 0, 0, 0.02),
-    0 5px 35px rgba(0, 0, 0, 0.03)
-    ;
-    border-radius: 10px;
+    
 }
 
 
@@ -408,7 +409,7 @@ a {
 
 .figma-level{
 
-    width: 90%;
+    width: 60%;
     background-color: #0acf83;
 }
 
@@ -447,7 +448,7 @@ a {
 
 .js-level{
 
-    width: 70%;
+    width: 60%;
     background-color: #ffd600;
 }
 
@@ -458,9 +459,22 @@ a {
     position: absolute;
 }
 
+.tailwind-level{
+
+    width: 50%;
+    background-color: #00a2ff;
+}
+
+.tailwind-level:hover::after{
+
+    content: "Tailwind";
+    top: -25px;
+    position: absolute;
+}
+
 .react-level{
 
-    width: 60%;
+    width: 50%;
     background-color: #002fff;
 }
 
@@ -473,7 +487,7 @@ a {
 
 .laravel-level{
 
-    width: 70%;
+    width: 50%;
     background-color: #ff3434;
 }
 

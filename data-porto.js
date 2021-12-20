@@ -2,7 +2,7 @@ let porto = [
 
     {
         title: "Doa Q - Moslem pray handbook",
-        desc: "This application is made for final year project in my degree. Doa Q is handbook for moslem to pray. I made this App with Laravel as backend and React Native for the frontend.",
+        desc: "This application is made for final year project in my degree. Doa Q is handbook for moslem to pray. I made this App with Laravel as REST API and React Native for the frontend.",
         img: "porto5.png",
         live: "https://play.google.com/store/apps/details?id=com.doaku",
         source: "http://doaq.herokuapp.com/",
